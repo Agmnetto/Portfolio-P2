@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #03050a;
+  color: #e2e8f0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #050811;
+  border-left: 1px solid #0f1d3d;
+  border-right: 1px solid #0f1d3d;
+}
+
+.topo {
+  height: 84px;
+  padding: 0 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #102044;
+  background-color: #050811;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icone {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  font-weight: 600;
+  color: #60a5fa;
+  background-color: #0b1736;
+  border: 1px solid #1d3b7a;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.logo-nome {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #60a5fa;
+}
+
+.menu .btn-contato {
+  background-color: #0f234e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #1e3f8a;
+}
+
+main {
+  padding: 0 72px;
+}
+
+section {
+  padding: 72px 0;
+  border-bottom: 1px solid #0d1936;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 56px;
+  padding: 84px 0;
+}
+
+.hero-texto {
+  width: 720px;
+}
+
+.etiqueta {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #93c5fd;
+  background-color: #0a1530;
+  border: 1px solid #1b3670;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-texto h1 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.hero-texto h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #60a5fa;
+  margin-bottom: 22px;
+}
+
+.hero-texto p {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 32px;
+  max-width: 650px;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-azul,
+.btn-escuro {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 26px;
+  border-radius: 8px;
+}
+
+.btn-azul {
+  background-color: #142c63;
+  color: #ffffff;
+  border: 1px solid #254ea8;
+}
+
+.btn-escuro {
+  background-color: #080e1f;
+  color: #cbd5e1;
+  border: 1px solid #172a57;
+}
+
+.hero-codigo {
+  width: 500px;
+  background-color: #081024;
+  border: 1px solid #172b59;
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.bolinhas {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #112147;
+}
+
+.bolinhas span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #1e3a7a;
+}
+
+.bloco-codigo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #e2e8f0;
+}
+
+.recuo {
+  padding-left: 22px;
+}
+
+.azul {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.azul-claro {
+  color: #93c5fd;
+}
+
+.destaque {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.titulo-secao {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.numero-secao {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: #60a5fa;
+  background-color: #0b1838;
+  border: 1px solid #1c3978;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.titulo-secao h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.subtitulo-secao {
+  color: #94a3b8;
+  font-size: 16px;
+  margin-top: -12px;
+  margin-bottom: 36px;
+}
+.duas-colunas {
+  display: flex;
+  gap: 32px;
+}
+
+.caixa {
+  flex: 1;
+  background-color: #080e1e;
+  border: 1px solid #13254d;
+  border-radius: 12px;
+  padding: 36px;
+}
+
+.texto-caixa {
+  color: #cbd5e1;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.lista-dados {
+  list-style: none;
+  border-top: 1px solid #112247;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lista-dados li {
+  font-size: 15px;
+  color: #94a3b8;
+}
+
+.lista-dados strong {
+  color: #f1f5f9;
+}
+
+.item-formacao {
+  padding-left: 20px;
+  border-left: 2px solid #1e3f8a;
+  margin-bottom: 24px;
+}
+
+.item-formacao:last-child {
+  margin-bottom: 0;
+}
+
+.data {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #60a5fa;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.item-formacao h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.subtitulo-formacao {
+  font-size: 14px;
+  color: #93c5fd;
+  margin-bottom: 8px;
+}
+
+.descricao-formacao {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Seção 03: Habilidades */
+.grade-habilidades {
+  display: flex;
+  gap: 24px;
+}
+
+.card-habilidade {
+  flex: 1;
+  background-color: #080e1e;
+  border: 1px solid #13254d;
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-habilidade h4 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.card-habilidade p {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  background-color: #0c1938;
+  color: #93c5fd;
+  border: 1px solid #1a356e;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Seção 04: Lista Vertical das 8 Disciplinas */
+.lista-disciplinas {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-disciplina {
+  background-color: #081024;
+  border: 1px solid #152954;
+  border-radius: 12px;
+  padding: 32px 36px;
+}
+
+.topo-disciplina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.num-disciplina {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: #60a5fa;
+}
+
+.tag-area {
+  font-size: 12px;
+  font-weight: 600;
+  color: #cbd5e1;
+  background-color: #0e1e42;
+  border: 1px solid #1e3b7a;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.card-disciplina h4 {
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #112147;
+}
+
+.bloco-texto {
+  margin-bottom: 14px;
+}
+
+.bloco-texto:last-child {
+  margin-bottom: 0;
+}
+
+.bloco-texto strong {
+  display: block;
+  font-size: 14px;
+  color: #93c5fd;
+  margin-bottom: 4px;
+}
+
+.bloco-texto p {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* Rodapé */
+.rodape {
+  padding: 40px 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #04070f;
+}
+
+.rodape h3 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.rodape p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.rodape-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.rodape-links a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.rodape-links a:hover {
+  color: #ffffff;
+}
